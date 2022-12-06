@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" media="screen and (max-width:  768px)" href="css/mobile.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+		integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+	<title></title>
+</head>
+
+<body>
+	<header>
+		<nav id="navbar">
+			<div class="container">
+				<h1 id="logo"><img src="img/logo.jpeg" alt=""></h1>
+				<ul> 
+					<li><a href="paginaP.html" >Hotel</a></li>
+					<li><a href="Habitaciones.html" >Habitaciones</a></li>
+					<li><a href="reservacion.html" class="current">Reservaciones</a></li>
+					<li><a href="estadisticas.html" >Habitaciones Ocupadas</a></li>
+					<li><a href="index.html">Cerrar Sesion</a></li>
+				</ul>
+			</div>
+		</nav>
+	</header>
+	<main id="main-contact">
+		<br>
+		<br>
+		<section class="form-register">
+				<u>Reservaciones</u>
+				<!--Opcion1-->
+				
+				<form   action="comprobante.php" method="post">
+					
+					<m>Nombre:</m>
+				<br>
+					<input class="controls" type="text" name="nombre" id="nombre" placeholder="Ingrese su Nombre" required>
+				<br> 
+				<!--Opcion2-->
+					<m>Entrada:</m>
+					<input type="date" name="entrada" value="" required>
+				    <m>Salida:</m>
+				<input type="date" name="salida" value="" required>
+					      <!--Opcion 4-->
+						
+				<br>
+					<m>Habitaciones</m>
+					<br>
+									<!--Opcion3-->
+					    <select name="habitaciones[]">
+						<option value="0">Seleccione una habitacion
+						<option value="Habitación sencilla">Habitacion sencilla
+						<option value="Habitación doble">Habitacion doble
+						<option value="Habitación deluxe" >Habitacion deluxe
+						<option value="Suite" >Suite
+					</select>
+					<br>
+				<m> Adultos</m>
+					<select name="adultos[]">
+						<option value="1">1
+						<option value="2">2
+						<option value="3">3
+						<option value="4">4
+						<option value="5">5
+						<option value="6">6
+						<option value="7">7
+						<option value="8">8
+						<option value="9">9
+						<option value="10">10
+					</select>
+					<!--Opcion 4-->
+					<m>Niños</m>
+					<select name="niños[]">
+						<option value="1">1
+						<option value="2">2
+						<option value="3">3
+						<option value="4">4
+						<option value="5">5
+						<option value="6">6
+						<option value="7">7
+						<option value="8">8
+						<option value="9">9
+						<option value="10">10
+					</select>
+				<!--boton1-->
+					<input class="botons" type="submit" value="Reservar">
+			</form>
+		</section>
+		</div>
+	</main>
+
+</body>
+
+</html>

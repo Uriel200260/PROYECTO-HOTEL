@@ -1,0 +1,494 @@
+/* Reset and Global Styling */
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	line-height: 1.9em;
+}
+
+.container {
+	max-width: 1100px;
+	margin: 0 auto;
+	padding: 0 20px;
+	overflow: auto;
+
+}
+.primary-text {
+	color: #f7c08a;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.btn {
+	width: 210px;
+	height: 50px;
+	display: block; 
+	text-align: center;
+	text-decoration: none;
+	font-size: 1.4em;
+	padding: 6px 10px 10px 10px;
+	cursor: pointer;
+	border-radius: 12px;
+}
+
+/* Apartado de los Estilos del  paginaP.html */
+
+/* fondo para el menu */
+#navbar {
+	background: #ffffff;
+	overflow: auto;
+}
+/* logo */
+#logo img{
+	float:left;
+    width: 200px;
+    height: 90px;
+}
+
+#navbar ul {
+	float: right;
+	list-style-type: none;
+}
+
+#navbar ul li {
+	float:left;
+}
+/* apartado de lista del menu */
+#navbar ul li a {
+	display: block;
+	text-align: center;
+	text-decoration: none;
+	color: #000000;
+	padding: 30px;
+}
+/* fondo de los apartados del menu */
+#navbar ul li a.current, #navbar ul li a:hover {
+	color: rgb(235, 194, 82);
+	background-color: #000000;
+}
+/* fondo de la pagina */
+#showcase {
+	background-image:linear-gradient(rgba(0, 0, 0, 0.575),rgba(0,0,0,0.575)),url("../img/hotel7.jpg");
+	background-size: cover;
+	height: 90vh;
+        min-height: 600px;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 12px;
+}
+/* tutulo principal */
+#showcase h2 strong {
+	font-size: 3em;
+	color: #fdfffd;
+	font-family: cursive;
+}
+/* subtitulo de la paginaP*/
+#showcase h3 {
+	color: rgb(252, 248, 248);
+	font-size: 1.3em;
+	font-weight: 500;
+	font-family:'Times New Roman', Times, serif;
+}
+/* color para el Encabezado de menu*/
+#showcase-btn {
+	color: white;
+	background-color: #353535; 
+	margin: 40px auto 9px auto;
+	cursor: pointer;
+}
+
+#showcase-btn:hover {
+	color: #353535;
+	background-color: #f7c08a;
+}
+
+#section-one {
+	width: 100%;
+	height: 400px;
+}
+/* Apartado 2 */
+#section-one #img {
+	float: left;
+	width: 50%;
+	background: url('../img/hotel5.jpeg') no-repeat center center/cover;
+	min-height: 113%;
+}
+
+#section-one #the-history {
+	float: right;
+	width: 50%;
+	text-align: center;
+	background-color: #353535;
+	padding: 50px 30px;
+	min-height: 113%;
+}
+
+#section-one #the-history h4 {
+	padding-bottom: 20px;
+	font-size: 1.6em;
+	color: white;
+}
+
+#section-one #the-history h4 strong {
+	padding-top: 40px;
+}
+
+#section-one #the-history p {
+	color: white;
+	margin: 0 auto;
+	font-family: Bitstream Charter;
+}
+
+@media screen and (max-width: 1160px) {
+	#section-one #the-history { 
+		padding: 30px 25px;
+	}
+	#section-one #the-history p {
+		font-size: 14px;
+	}
+}
+/*Boton de segundo apartado*/
+#section-one #the-history-btn {
+	color: #030303;
+	background-image: linear-gradient(180deg, #f4dc9b 0, #e7c985 25%, #d8b46c 50%, #c99f54 75%, #bd8d40 100%);
+	margin: 40px auto 10px auto;
+	cursor: pointer;
+}
+/*Boton de segundo apartado cuando se pasa el ratón sobre ella*/
+#section-one #the-history-btn:hover {
+	background-color: #e0974d;
+}
+/*3 apartado */
+#section-two {
+	clear: both;
+}
+
+.section-two-box {
+	float: left;
+	width: 33.33%;
+	text-align: center;
+	color: #000000;
+	background-color: #f7c08a;
+	padding: 50px 30px 50px 30px;
+}
+
+.section-two-box:nth-of-type(2) {
+	background-color: #ffffff;
+}
+
+.section-two-box h5 {
+	font-size: 1.3em;
+	padding: 10px 0 20px 0;
+}
+
+footer {
+	clear: both;
+	width: 100%;
+	color: rgb(0, 0, 0);
+	background-color: #fcfbf9;
+	text-align: center;
+	padding: 20px;
+}
+/*---------------------------------------------------------------------------------------*/
+
+/* Pagina de estadisticas */
+
+/*fondo de estadisticas*/
+main {
+	background-image:linear-gradient(rgba(0, 0, 0, 0.315),rgba(0,0,0,0.315)),url("../img/ESTADISCA.jpeg");
+	background-size: cover;
+	height: 100vh;
+    min-height: 600px;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 12px;
+}
+/*fondo de estadisticas de la tabla*/
+#estadisticas-content {
+   background-color:rgba(32, 32, 32, 0.616);
+   width: 1000px;
+   height: 500px;
+   padding-top: 1.1px;
+   margin: 0 auto;
+   margin-top: 3px;
+   border-radius: 10px;
+   box-shadow: 7px 13px 37px #000;
+
+}
+/*Titulo de estadisticas*/
+#estadisticas-content h2{
+	color: #f0b870;
+	padding: 8px 0;
+	font-size: 47px;
+	font-family: cursive;
+}
+/*letra para el boton*/
+#estadisticas-content f {
+	color: #f0e269;
+	padding: 8px 0;
+	font-family:'Times New Roman', Times, serif;
+	font-size: 19px;
+}
+/*subtitulo de estadisticas*/
+j{
+	font-size: 20px;
+	font-family:'Times New Roman', Times, serif;
+	padding-top: 0px;
+	text-align: center;
+	color: #fcf9f9;
+}
+/*boton de mostrar*/
+#estadisticas-btn .btn1{
+	width: 300px;
+	height: 40px;
+	background-image: linear-gradient(180deg, #f4dc9b 0, #e7c985 25%, #d8b46c 50%, #c99f54 75%, #bd8d40 100%);
+	border: none;
+	color: rgb(5, 5, 5);
+	margin: 16px 0;
+	font-size: 16px;
+	border-radius: 10px;	
+}
+/*---------------------------------------------------------------------------------------*/
+/* habitaciones inicio*/
+
+/* fondo del apatado de habitaciones*/
+.about-content{
+	background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0,0,0,0.5)),url("../img/hote3.jpg");
+	background-size: cover;
+	height: 160vh;
+    min-height: 600px;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 12px;
+}
+/* titulo del apatado de habitaciones*/
+#guests-say h2 {
+	font-size: 3em;
+	color: #f7ae50;
+	font-family: cursive;
+}
+/* subtitulos de los tipos de habitaciones */
+#guests-say p{
+	font-size: 1em;
+	color: #000000;
+	font-family: 'Courier New', Courier, monospace;
+	font-size: 14px;
+}
+/* subtitulo del apatado de habitaciones*/
+#guests-say r {
+	font-size: 19px;
+	color: #f7f2f2;
+	font-family:'Times New Roman', Times, serif;
+	text-align: center;
+}
+/* color para el tipos habitaciones*/
+#guests-say .guest-comment {
+	clear: both;
+	width: 100%;
+	background-color: #d8b087;
+	border-radius: 10px;
+	min-height: 180px;
+	margin: 20px 0;
+	opacity: 0.9;
+	font-size: 16px;
+}
+/* imagen para el tipos habitaciones*/
+#guests-say .guest-comment img {
+	display: block;
+	float: left;
+	width: 20%;
+	border-radius: 50%;
+	margin: 15px 30px;
+}
+/* titulo de los cuadros de tipos habitaciones*/
+#guests-say .guest-comment p {
+	float: right;
+	width: 65%;
+	color: #000000;
+	text-align: left;
+	font-family:'Times New Roman', Times, serif;
+	margin: 8px 40px 0px 0px;
+}
+/* texto de los cuadros de tipos habitaciones*/
+#guests-say .guest-comment w{
+	float: right;
+	width: 65%;
+	color: #000000;
+	text-align: left;
+	font-family:'Times New Roman', Times, serif;
+	margin: 4px 50px 0px 0px;
+}
+/* precio de los cuadros de tipos habitaciones*/
+#guests-say .guest-comment u {
+	float: right;
+	width: 65%;
+	color: #1c1c3d;
+	text-align: left;
+	font-family:'Times New Roman', Times, serif;
+}
+@media screen and (max-width: 980px) {
+	#guests-say .guest-comment p {
+		font-size: 15px;
+		float: right;
+		margin: 15px 15px 15px 0px;
+	}
+}
+
+/* habitaciones fin*/
+
+/*---------------------------------------------------------------------------------------*/
+/* formulario inicio de reservaciones */
+#main-contact {
+	background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("../img/hotel12.jpg");
+	background-size: cover;
+	height: 100vh;
+    min-height: 600px;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 10px;
+}
+/* fondo y tamaño del formulario inicio de reservaciones */
+.form-register{
+background-color:rgba(255, 255, 255, 0.473);
+   width: 410px;
+   height: 400px;
+   padding-top: 1.1px;
+   margin: 0 auto;
+   margin-top: 3px;
+   border-radius: 10px;
+   box-shadow: 7px 13px 37px #000;
+}
+/*Titulo del apartado de reservacion*/
+.form-register u{
+	font-size: 50px;
+	font-family: cursive;
+	color: rgb(5, 5, 5);
+	   padding-top: 1.1px;
+}
+
+  /* OPCION 1 (EL NOMBRE)*/
+  .controls {
+	width: 80%;
+	background: #ffffff8e;
+	padding: 0px;
+	border-radius: 3px;
+	margin-bottom: 16px;
+	border: 1px solid #d6ce88;
+	font-family: 'calibri';
+	font-size: 13px;
+	color: rgb(0, 0, 0);
+}
+/*Subtitulo del apartado de reservacion*/
+.form-register p {
+	height: 40px;
+	text-align: center;
+	color: rgb(233, 191, 77);
+	font-family:'Times New Roman', Times, serif;
+	font-size: 14px;
+	line-height: 20px;
+	background-image:linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4));
+
+  }
+  /*para las letras de las opciones*/
+  .form-register m {
+	color: rgb(0, 0, 0);
+	text-decoration: none;
+	font-family:'Times New Roman', Times, serif;
+	font-size: 17px;
+	margin: 4px 0;
+  }
+  
+  .form-register a:hover {
+	color: rgb(0, 0, 0);
+	text-decoration: underline;
+  }
+    /* boton de enviar*/
+  .form-register .botons {
+	width: 300px;
+	height: 40px;
+	background-image: linear-gradient(180deg, #f4dc9b 0, #e7c985 25%, #d8b46c 50%, #c99f54 75%, #bd8d40 100%);
+	border: none;
+	color: rgb(5, 5, 5);
+	margin: 16px 0;
+	font-size: 16px;
+	border-radius: 4px;
+  }
+    /*OPCION2(CALIDARIO)*/
+  input[type=date] {
+	background: #fcfbf9fb;
+	border: 1px solid #fffdfd;
+	border-radius: 10px;
+	
+  }
+  /*SELECCION 3 y 4(Habitacines y Opcion de niños y aldultos*/
+  select{
+    background-color: #fdfcfa;
+	border-radius: 8px;
+	padding: 7px;
+	margin: 3px 0;
+  }
+  /*-------------------------------------------------------------------------*/
+
+#contact {
+	padding: 25px 0 35px 0;
+}
+
+#contact h2 {
+	font-size: 2.5em;
+	color: #353535;
+	margin-bottom: 12px;
+}
+
+#contact .form-group label {
+	display: block;
+	margin: 15px 0 5px 0;
+	color: #252525;
+}
+
+#contact .form-group input, 
+#contact .form-group textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px #ddd solid;
+}
+
+#contact .form-group textarea {
+	height: 200px;
+}
+
+#contact .form-group input:focus, 
+#contact .form-group textarea:focus {
+  outline: none;
+  border-color: #f7c08a;
+}
+
+#contact #form-btn {
+	color: white;
+	background-color: #353535; 
+	margin: 30px auto 10px auto;
+	cursor: pointer;
+	border: 0;
+	margin: 30px 0 10px 0;
+}
+
+#contact #form-btn:hover {
+	color: #353535;
+	background-color: #f7c08a;
+}
+
+#informations {
+	background-color: #353535;
+	padding: 45px 0;
+}
+
+#informations .information-box {
+	float: left;
+	width: 33.333%;
+	color: white;
+	text-align: center;
+}
+
+#informations .information-box h3 {
+	margin: 12px 0 24px 0;
+}
